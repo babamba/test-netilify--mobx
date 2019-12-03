@@ -4,6 +4,7 @@ import MetaTags from "react-meta-tags"
 
 import Counter from "./Counter"
 import NameSpace from "./NameSpace"
+import List from "./List"
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         </p>
         <Counter />
         <NameSpace />
+        <List />
       </header>
     </div>
   )

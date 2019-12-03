@@ -1,6 +1,7 @@
-import { observable, action } from "mobx"
+import { observable, action, autorun, computed } from "mobx"
+import { observer } from "mobx-react"
 
-export default class CounterStore {
+class CounterStore {
   @observable number = 0
 
   @action increase = () => {
@@ -11,3 +12,5 @@ export default class CounterStore {
     this.number--
   }
 }
+
+export default CounterStore
